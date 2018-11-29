@@ -1,0 +1,83 @@
+[2018-11-29 20:45:23] INFO [run: run.py, 63] ================================== 测试开始 ==================================
+[2018-11-29 20:45:23] INFO [log_case_info: case_log.py, 10] 测试用例：test_user_login_normal
+[2018-11-29 20:45:23] INFO [log_case_info: case_log.py, 11] url：http://115.28.108.130:5000/api/user/login/
+[2018-11-29 20:45:23] INFO [log_case_info: case_log.py, 12] 请求参数：{"name": "张三","password":"123456"}
+[2018-11-29 20:45:23] INFO [log_case_info: case_log.py, 13] 期望结果：<h1>登录成功</h1>
+[2018-11-29 20:45:23] INFO [log_case_info: case_log.py, 14] 实际结果：<h1>登录成功</h1>
+[2018-11-29 20:45:23] INFO [log_case_info: case_log.py, 10] 测试用例：test_user_login_password_wrong
+[2018-11-29 20:45:23] INFO [log_case_info: case_log.py, 11] url：http://115.28.108.130:5000/api/user/login/
+[2018-11-29 20:45:23] INFO [log_case_info: case_log.py, 12] 请求参数：{"name": "张三","password":"1234567"}
+[2018-11-29 20:45:23] INFO [log_case_info: case_log.py, 13] 期望结果：<h1>失败，用户名或密码错误</h1>
+[2018-11-29 20:45:23] INFO [log_case_info: case_log.py, 14] 实际结果：<h1>失败，用户名或密码错误</h1>
+[2018-11-29 20:45:23] INFO [log_case_info: case_log.py, 10] 测试用例：test_user_reg_exist
+[2018-11-29 20:45:23] INFO [log_case_info: case_log.py, 11] url：http://115.28.108.130:5000/api/user/reg/
+[2018-11-29 20:45:23] INFO [log_case_info: case_log.py, 12] 请求参数：{"name": "张三","password":"123456"}
+[2018-11-29 20:45:23] INFO [log_case_info: case_log.py, 13] 期望结果：{"code": "100001", "data": {"name": "\u5f20\u4e09", "password": "e10adc3949ba59abbe56e057f20f883e"}, "msg": "\u5931\u8d25\uff0c\u7528\u6237\u5df2\u5b58\u5728"}
+[2018-11-29 20:45:23] INFO [log_case_info: case_log.py, 14] 实际结果：{"code": "100001", "data": {"name": "张三", "password": "e10adc3949ba59abbe56e057f20f883e"}, "msg": "失败，用户已存在"}
+[2018-11-29 20:45:23] INFO [log_case_info: case_log.py, 10] 测试用例：test_user_reg_normal
+[2018-11-29 20:45:23] INFO [log_case_info: case_log.py, 11] url：http://115.28.108.130:5000/api/user/reg/
+[2018-11-29 20:45:23] INFO [log_case_info: case_log.py, 12] 请求参数：{"name": "范冰冰","password":"123456"}
+[2018-11-29 20:45:23] INFO [log_case_info: case_log.py, 13] 期望结果：{"code": "100000", "data": {"name": "\u8303\u51b0\u51b0", "password": "e10adc3949ba59abbe56e057f20f883e"}, "msg": "\u6210\u529f"}
+[2018-11-29 20:45:23] INFO [log_case_info: case_log.py, 14] 实际结果：{"code": "100000", "data": {"name": "范冰冰", "password": "e10adc3949ba59abbe56e057f20f883e"}, "msg": "成功"}
+[2018-11-29 20:45:24] INFO [run: run.py, 73] ================================== 测试结束 ==================================
+[2018-11-29 21:08:43] INFO [_log: _internal.py, 88]  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2018-11-29 21:09:13] INFO [_log: _internal.py, 88]  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2018-11-29 21:09:31] INFO [_log: _internal.py, 88]  * Running on http://127.0.0.1:5001/ (Press CTRL+C to quit)
+[2018-11-29 21:09:37] INFO [_log: _internal.py, 88]  * Running on http://127.0.0.1:5001/ (Press CTRL+C to quit)
+[2018-11-29 21:10:30] INFO [_log: _internal.py, 88]  * Running on http://127.0.0.1:5001/ (Press CTRL+C to quit)
+[2018-11-29 21:11:42] INFO [_log: _internal.py, 88]  * Running on http://127.0.0.1:5001/ (Press CTRL+C to quit)
+[2018-11-29 21:12:01] INFO [_log: _internal.py, 88]  * Running on http://127.0.0.1:5001/ (Press CTRL+C to quit)
+[2018-11-29 21:12:32] INFO [_log: _internal.py, 88]  * Running on http://127.0.0.1:5001/ (Press CTRL+C to quit)
+[2018-11-29 21:12:49] INFO [_log: _internal.py, 88]  * Running on http://127.0.0.1:5001/ (Press CTRL+C to quit)
+[2018-11-29 21:12:56] INFO [_log: _internal.py, 88]  * Running on http://127.0.0.1:5002/ (Press CTRL+C to quit)
+[2018-11-29 21:13:01] INFO [_log: _internal.py, 88]  * Running on http://127.0.0.1:5002/ (Press CTRL+C to quit)
+[2018-11-29 21:14:04] INFO [_log: _internal.py, 88]  * Running on http://127.0.0.1:5002/ (Press CTRL+C to quit)
+[2018-11-29 21:16:45] INFO [_log: _internal.py, 88]  * Running on http://127.0.0.1:5002/ (Press CTRL+C to quit)
+[2018-11-29 21:17:42] INFO [_log: _internal.py, 88]  * Running on http://127.0.0.1:5002/ (Press CTRL+C to quit)
+[2018-11-29 21:17:56] INFO [_log: _internal.py, 88]  * Running on http://127.0.0.1:5002/ (Press CTRL+C to quit)
+[2018-11-29 21:18:58] INFO [_log: _internal.py, 88]  * Running on http://127.0.0.1:5002/ (Press CTRL+C to quit)
+[2018-11-29 21:19:22] INFO [_log: _internal.py, 88]  * Running on http://127.0.0.1:5002/ (Press CTRL+C to quit)
+[2018-11-29 21:22:16] INFO [_log: _internal.py, 88]  * Running on http://127.0.0.1:5002/ (Press CTRL+C to quit)
+[2018-11-29 21:23:17] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:23:17] "GET / HTTP/1.1" 200 -
+[2018-11-29 21:23:17] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:23:17] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-11-29 21:23:52] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:23:52] "GET / HTTP/1.1" 200 -
+[2018-11-29 21:23:59] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:23:59] "GET / HTTP/1.1" 200 -
+[2018-11-29 21:24:14] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:24:14] "GET / HTTP/1.1" 200 -
+[2018-11-29 21:24:20] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:24:20] "GET / HTTP/1.1" 200 -
+[2018-11-29 21:24:21] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:24:21] "GET / HTTP/1.1" 200 -
+[2018-11-29 21:24:26] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:24:26] "GET / HTTP/1.1" 200 -
+[2018-11-29 21:27:39] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:27:39] "GET / HTTP/1.1" 200 -
+[2018-11-29 21:27:51] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:27:51] "GET / HTTP/1.1" 200 -
+[2018-11-29 21:27:55] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:27:55] "GET / HTTP/1.1" 200 -
+[2018-11-29 21:27:56] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:27:56] "GET / HTTP/1.1" 200 -
+[2018-11-29 21:28:50] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:28:50] "GET / HTTP/1.1" 200 -
+[2018-11-29 21:28:54] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:28:54] "GET / HTTP/1.1" 200 -
+[2018-11-29 21:29:18] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:29:18] "GET / HTTP/1.1" 200 -
+[2018-11-29 21:30:25] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:30:25] "GET / HTTP/1.1" 200 -
+[2018-11-29 21:30:25] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:30:25] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-11-29 21:30:27] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:30:27] "GET / HTTP/1.1" 200 -
+[2018-11-29 21:30:27] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:30:27] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-11-29 21:30:28] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:30:28] "GET / HTTP/1.1" 200 -
+[2018-11-29 21:30:28] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:30:28] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-11-29 21:30:30] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:30:30] "GET / HTTP/1.1" 200 -
+[2018-11-29 21:30:30] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:30:30] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-11-29 21:30:30] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:30:30] "GET / HTTP/1.1" 200 -
+[2018-11-29 21:30:30] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:30:30] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-11-29 21:30:30] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:30:30] "GET / HTTP/1.1" 200 -
+[2018-11-29 21:30:30] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:30:30] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-11-29 21:30:31] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:30:31] "GET / HTTP/1.1" 200 -
+[2018-11-29 21:30:31] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:30:31] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-11-29 21:30:35] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:30:35] "GET / HTTP/1.1" 200 -
+[2018-11-29 21:31:29] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:31:29] "GET / HTTP/1.1" 200 -
+[2018-11-29 21:31:38] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:31:38] "GET / HTTP/1.1" 200 -
+[2018-11-29 21:31:39] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:31:39] "GET / HTTP/1.1" 200 -
+[2018-11-29 21:31:40] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:31:40] "GET / HTTP/1.1" 200 -
+[2018-11-29 21:31:40] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:31:40] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-11-29 21:31:41] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:31:41] "GET / HTTP/1.1" 200 -
+[2018-11-29 21:31:41] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:31:41] "GET /favicon.ico HTTP/1.1" 404 -
+[2018-11-29 21:31:42] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:31:42] "GET / HTTP/1.1" 200 -
+[2018-11-29 21:34:30] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:34:30] "GET / HTTP/1.1" 200 -
+[2018-11-29 21:34:57] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:34:57] "GET / HTTP/1.1" 200 -
+[2018-11-29 21:35:03] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:35:03] "GET / HTTP/1.1" 200 -
+[2018-11-29 21:35:10] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:35:10] "GET / HTTP/1.1" 200 -
+[2018-11-29 21:35:14] INFO [_log: _internal.py, 88] 127.0.0.1 - - [29/Nov/2018 21:35:14] "GET / HTTP/1.1" 200 -

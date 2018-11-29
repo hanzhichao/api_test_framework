@@ -1,0 +1,4 @@
+{
+  "test_user_reg.py::TestUserReg::test_user_reg_exist": true,
+  "test_user_reg.py::TestUserReg::test_user_reg_normal": true
+}

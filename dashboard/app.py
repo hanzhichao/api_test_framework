@@ -1,29 +1,23 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, redirect
 import os
 import sys
 sys.path.append("..")
 import unittest
 import pickle
-# from config.config import *
+from lib.HTMLTestReportCN import HTMLTestRunner
 
 
-app2 = Flask(__name__)
-
-case_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'test', 'case')
+app = Flask(__name__)
 
 
+app_dir = os.path.dirname(os.path.abspath(__file__))
+case_dir = os.path.join(os.path.dirname(app_dir), 'test', 'case')
+suite_dir = os.path.join(app_dir, 'suites')
+
+report_file = os.path.join(app_dir, 'templates','report.html')
 
 def discover():
-    return unittest.defaultTestLoader.discover(case_path)
-
-
-def save(result, file):
-    suite = unittest.TestSuite()
-    for case_result in result.failures:
-        suite.addTest(case_result[0])
-
-    with open(file, 'wb') as f:
-        pickle.dump(suite, f)
+    return unittest.defaultTestLoader.discover(case_dir)
 
 
 def collect():
@@ -40,18 +34,49 @@ def collect():
     _collect(discover())
     return suite
 
-@app2.route("/", methods=["GET"])
-def index():
-    cases = []
+
+@app.route("/", methods=['GET', 'POST'])
+def suite_list():
+    suite_list = [suite.split(".")[0] for suite in os.listdir('suites') if suite.endswith(".testsuite")]
+    if request.method == 'POST':
+        suite_name = request.form.get("suite")
+        sys.path.append(case_dir)
+        with open(os.path.join(suite_dir, suite_name+".testsuite"), 'rb') as f:
+            suite = pickle.load(f)
+
+        with open(report_file, 'wb') as f:  # 从配置文件中读取
+            result = HTMLTestRunner(stream=f, title="Api Test", description="测试描述", tester="卡卡").run(suite)
+        return redirect("/report")
+
+    return render_template('suite_list.html', suite_list=suite_list)
+
+
+
+@app.route("/suite_add", methods=["GET", "POST"])
+def suite_add():
+    tests = []
+
     for case in collect():
-        cases.append(case.id())
-    return render_template("list.html", cases=cases)
+        tests.append(case.id())
+
+    if request.method == "POST":
+        suite_name = request.form.get("suite_name")
+        cases = request.form.getlist("cases")
+        suite = unittest.defaultTestLoader.loadTestsFromNames(cases)
+
+        with open(os.path.join(suite_dir, suite_name+".testsuite"), 'wb') as f:
+            pickle.dump(suite, f)
+
+        return redirect("/list")
+        # unittest.TextTestRunner(verbosity=2).run(suite)
+
+    return render_template('suite_add.html', tests=tests)
 
 
-def get_suite_detail():
-    pass
 
+@app.route("/report", methods=['GET', 'POST'])
+def report():
+    return render_template('report.html')
 
-
-if __name__ == "__main__":
-    app2.run(port=5002)
+if __name__ == '__main__':
+    app.run(port="5005", debug=True)

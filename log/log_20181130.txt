@@ -1,0 +1,141 @@
+[2018-11-30 12:09:03] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 12:09:03] "GET /tests HTTP/1.1" 200 -
+[2018-11-30 12:09:08] INFO [log_case_info: case_log.py, 10] 测试用例：test_user_login_normal
+[2018-11-30 12:09:08] INFO [log_case_info: case_log.py, 11] url：http://115.28.108.130:5000/api/user/login/
+[2018-11-30 12:09:08] INFO [log_case_info: case_log.py, 12] 请求参数：{"name": "张三","password":"123456"}
+[2018-11-30 12:09:08] INFO [log_case_info: case_log.py, 13] 期望结果：<h1>登录成功</h1>
+[2018-11-30 12:09:08] INFO [log_case_info: case_log.py, 14] 实际结果：<h1>登录成功</h1>
+[2018-11-30 12:09:08] INFO [log_case_info: case_log.py, 10] 测试用例：test_user_login_password_wrong
+[2018-11-30 12:09:08] INFO [log_case_info: case_log.py, 11] url：http://115.28.108.130:5000/api/user/login/
+[2018-11-30 12:09:08] INFO [log_case_info: case_log.py, 12] 请求参数：{"name": "张三","password":"1234567"}
+[2018-11-30 12:09:08] INFO [log_case_info: case_log.py, 13] 期望结果：<h1>失败，用户名或密码错误</h1>
+[2018-11-30 12:09:08] INFO [log_case_info: case_log.py, 14] 实际结果：<h1>失败，用户名或密码错误</h1>
+[2018-11-30 12:09:08] INFO [log_case_info: case_log.py, 10] 测试用例：test_user_reg_exist
+[2018-11-30 12:09:08] INFO [log_case_info: case_log.py, 11] url：http://115.28.108.130:5000/api/user/reg/
+[2018-11-30 12:09:08] INFO [log_case_info: case_log.py, 12] 请求参数：{"name": "张三","password":"123456"}
+[2018-11-30 12:09:08] INFO [log_case_info: case_log.py, 13] 期望结果：{"code": "100001", "data": {"name": "\u5f20\u4e09", "password": "e10adc3949ba59abbe56e057f20f883e"}, "msg": "\u5931\u8d25\uff0c\u7528\u6237\u5df2\u5b58\u5728"}
+[2018-11-30 12:09:08] INFO [log_case_info: case_log.py, 14] 实际结果：{"code": "100001", "data": {"name": "张三", "password": "e10adc3949ba59abbe56e057f20f883e"}, "msg": "失败，用户已存在"}
+[2018-11-30 12:09:09] INFO [log_case_info: case_log.py, 10] 测试用例：test_user_reg_normal
+[2018-11-30 12:09:09] INFO [log_case_info: case_log.py, 11] url：http://115.28.108.130:5000/api/user/reg/
+[2018-11-30 12:09:09] INFO [log_case_info: case_log.py, 12] 请求参数：{"name": "范冰冰","password":"123456"}
+[2018-11-30 12:09:09] INFO [log_case_info: case_log.py, 13] 期望结果：{"code": "100000", "data": {"name": "\u8303\u51b0\u51b0", "password": "e10adc3949ba59abbe56e057f20f883e"}, "msg": "\u6210\u529f"}
+[2018-11-30 12:09:09] INFO [log_case_info: case_log.py, 14] 实际结果：{"code": "100000", "data": {"name": "范冰冰", "password": "e10adc3949ba59abbe56e057f20f883e"}, "msg": "成功"}
+[2018-11-30 12:09:09] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 12:09:09] "POST /tests HTTP/1.1" 200 -
+[2018-11-30 12:10:38] INFO [_log: _internal.py, 88]  * Detected change in 'E:\\Projects\\api_test_framework_finish2\\dashboard\\app.py', reloading
+[2018-11-30 12:11:01] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 12:11:01] "POST /tests HTTP/1.1" 200 -
+[2018-11-30 12:11:23] INFO [_log: _internal.py, 88]  * Detected change in 'E:\\Projects\\api_test_framework_finish2\\dashboard\\app.py', reloading
+[2018-11-30 12:13:40] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 12:13:40] "GET /tests HTTP/1.1" 200 -
+[2018-11-30 12:14:07] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 12:14:07] "GET /tests HTTP/1.1" 200 -
+[2018-11-30 12:14:28] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 12:14:28] "GET /tests HTTP/1.1" 200 -
+[2018-11-30 12:14:40] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 12:14:40] "GET /tests HTTP/1.1" 200 -
+[2018-11-30 12:16:03] INFO [_log: _internal.py, 88]  * Detected change in 'E:\\Projects\\api_test_framework_finish2\\dashboard\\app.py', reloading
+[2018-11-30 12:16:30] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 12:16:30] "GET /tests HTTP/1.1" 200 -
+[2018-11-30 12:17:13] INFO [_log: _internal.py, 88]  * Detected change in 'E:\\Projects\\api_test_framework_finish2\\dashboard\\app.py', reloading
+[2018-11-30 12:17:17] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 12:17:17] "GET /tests HTTP/1.1" 200 -
+[2018-11-30 12:17:37] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 12:17:37] "POST /tests HTTP/1.1" 200 -
+[2018-11-30 12:18:14] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 12:18:14] "POST /tests HTTP/1.1" 200 -
+[2018-11-30 12:19:13] INFO [_log: _internal.py, 88]  * Detected change in 'E:\\Projects\\api_test_framework_finish2\\dashboard\\app.py', reloading
+[2018-11-30 12:25:26] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 12:25:26] "GET /tests HTTP/1.1" 200 -
+[2018-11-30 12:25:37] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 12:25:37] "POST /tests HTTP/1.1" 302 -
+[2018-11-30 12:25:37] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 12:25:37] "GET /list HTTP/1.1" 200 -
+[2018-11-30 12:29:05] INFO [_log: _internal.py, 88]  * Detected change in 'E:\\Projects\\api_test_framework_finish2\\dashboard\\app.py', reloading
+[2018-11-30 12:49:00] INFO [log_case_info: case_log.py, 10] 测试用例：test_user_login_normal
+[2018-11-30 12:49:00] INFO [log_case_info: case_log.py, 11] url：http://115.28.108.130:5000/api/user/login/
+[2018-11-30 12:49:00] INFO [log_case_info: case_log.py, 12] 请求参数：{"name": "张三","password":"123456"}
+[2018-11-30 12:49:00] INFO [log_case_info: case_log.py, 13] 期望结果：<h1>登录成功</h1>
+[2018-11-30 12:49:00] INFO [log_case_info: case_log.py, 14] 实际结果：<h1>登录成功</h1>
+[2018-11-30 12:49:00] INFO [log_case_info: case_log.py, 10] 测试用例：test_user_login_password_wrong
+[2018-11-30 12:49:00] INFO [log_case_info: case_log.py, 11] url：http://115.28.108.130:5000/api/user/login/
+[2018-11-30 12:49:00] INFO [log_case_info: case_log.py, 12] 请求参数：{"name": "张三","password":"1234567"}
+[2018-11-30 12:49:00] INFO [log_case_info: case_log.py, 13] 期望结果：<h1>失败，用户名或密码错误</h1>
+[2018-11-30 12:49:00] INFO [log_case_info: case_log.py, 14] 实际结果：<h1>失败，用户名或密码错误</h1>
+[2018-11-30 12:49:00] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 12:49:00] "POST /list HTTP/1.1" 302 -
+[2018-11-30 12:49:00] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 12:49:00] "GET /report_list HTTP/1.1" 200 -
+[2018-11-30 12:49:37] INFO [_log: _internal.py, 88]  * Detected change in 'E:\\Projects\\api_test_framework_finish2\\dashboard\\app.py', reloading
+[2018-11-30 12:56:33] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 12:56:33] "POST /list HTTP/1.1" 500 -
+[2018-11-30 12:56:33] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 12:56:33] "GET /list?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2018-11-30 12:56:33] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 12:56:33] "GET /list?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+[2018-11-30 12:56:33] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 12:56:33] "GET /list?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2018-11-30 12:56:33] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 12:56:33] "GET /list?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+[2018-11-30 12:56:33] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 12:56:33] "GET /list?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2018-11-30 12:57:11] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 12:57:11] "GET /list HTTP/1.1" 200 -
+[2018-11-30 12:57:14] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 12:57:14] "POST /list HTTP/1.1" 500 -
+[2018-11-30 12:57:14] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 12:57:14] "GET /list?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2018-11-30 12:57:14] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 12:57:14] "GET /list?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+[2018-11-30 12:57:14] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 12:57:14] "GET /list?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2018-11-30 12:57:14] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 12:57:14] "GET /list?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+[2018-11-30 12:57:14] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 12:57:14] "GET /list?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2018-11-30 12:58:00] INFO [_log: _internal.py, 88]  * Detected change in 'E:\\Projects\\api_test_framework_finish2\\dashboard\\app.py', reloading
+[2018-11-30 12:58:05] INFO [log_case_info: case_log.py, 10] 测试用例：test_user_reg_normal
+[2018-11-30 12:58:05] INFO [log_case_info: case_log.py, 11] url：http://115.28.108.130:5000/api/user/reg/
+[2018-11-30 12:58:05] INFO [log_case_info: case_log.py, 12] 请求参数：{"name": "范冰冰","password":"123456"}
+[2018-11-30 12:58:05] INFO [log_case_info: case_log.py, 13] 期望结果：{"code": "100000", "data": {"name": "\u8303\u51b0\u51b0", "password": "e10adc3949ba59abbe56e057f20f883e"}, "msg": "\u6210\u529f"}
+[2018-11-30 12:58:05] INFO [log_case_info: case_log.py, 14] 实际结果：{"code": "100000", "data": {"name": "范冰冰", "password": "e10adc3949ba59abbe56e057f20f883e"}, "msg": "成功"}
+[2018-11-30 12:58:06] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 12:58:06] "POST /list HTTP/1.1" 302 -
+[2018-11-30 12:58:06] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 12:58:06] "GET /report_list HTTP/1.1" 200 -
+[2018-11-30 14:29:32] INFO [log_case_info: case_log.py, 10] 测试用例：test_user_reg_normal
+[2018-11-30 14:29:32] INFO [log_case_info: case_log.py, 11] url：http://115.28.108.130:5000/api/user/reg/
+[2018-11-30 14:29:32] INFO [log_case_info: case_log.py, 12] 请求参数：{"name": "范冰冰","password":"123456"}
+[2018-11-30 14:29:32] INFO [log_case_info: case_log.py, 13] 期望结果：{"code": "100000", "data": {"name": "\u8303\u51b0\u51b0", "password": "e10adc3949ba59abbe56e057f20f883e"}, "msg": "\u6210\u529f"}
+[2018-11-30 14:29:32] INFO [log_case_info: case_log.py, 14] 实际结果：{"code": "100000", "data": {"name": "范冰冰", "password": "e10adc3949ba59abbe56e057f20f883e"}, "msg": "成功"}
+[2018-11-30 14:29:32] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 14:29:32] "POST /list HTTP/1.1" 302 -
+[2018-11-30 14:29:32] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 14:29:32] "GET /report_list HTTP/1.1" 200 -
+[2018-11-30 15:23:27] INFO [_log: _internal.py, 88]  * Detected change in 'E:\\Projects\\api_test_framework_finish2\\dashboard\\app.py', reloading
+[2018-11-30 16:19:30] INFO [log_case_info: case_log.py, 10] 测试用例：test_user_login_normal
+[2018-11-30 16:19:30] INFO [log_case_info: case_log.py, 11] url：http://115.28.108.130:5000/api/user/login/
+[2018-11-30 16:19:30] INFO [log_case_info: case_log.py, 12] 请求参数：{"name": "张三","password":"123456"}
+[2018-11-30 16:19:30] INFO [log_case_info: case_log.py, 13] 期望结果：<h1>登录成功</h1>
+[2018-11-30 16:19:30] INFO [log_case_info: case_log.py, 14] 实际结果：<h1>登录成功</h1>
+[2018-11-30 16:19:30] INFO [log_case_info: case_log.py, 10] 测试用例：test_user_login_password_wrong
+[2018-11-30 16:19:30] INFO [log_case_info: case_log.py, 11] url：http://115.28.108.130:5000/api/user/login/
+[2018-11-30 16:19:30] INFO [log_case_info: case_log.py, 12] 请求参数：{"name": "张三","password":"1234567"}
+[2018-11-30 16:19:30] INFO [log_case_info: case_log.py, 13] 期望结果：<h1>失败，用户名或密码错误</h1>
+[2018-11-30 16:19:30] INFO [log_case_info: case_log.py, 14] 实际结果：<h1>失败，用户名或密码错误</h1>
+[2018-11-30 16:19:30] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 16:19:30] "POST / HTTP/1.1" 302 -
+[2018-11-30 16:19:30] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 16:19:30] "GET /report_list HTTP/1.1" 200 -
+[2018-11-30 16:20:12] INFO [_log: _internal.py, 88]  * Detected change in 'E:\\Projects\\api_test_framework_finish2\\dashboard\\app.py', reloading
+[2018-11-30 16:23:24] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 16:23:24] "GET /suite_add HTTP/1.1" 200 -
+[2018-11-30 16:23:34] INFO [log_case_info: case_log.py, 10] 测试用例：test_user_login_normal
+[2018-11-30 16:23:34] INFO [log_case_info: case_log.py, 11] url：http://115.28.108.130:5000/api/user/login/
+[2018-11-30 16:23:34] INFO [log_case_info: case_log.py, 12] 请求参数：{"name": "张三","password":"123456"}
+[2018-11-30 16:23:34] INFO [log_case_info: case_log.py, 13] 期望结果：<h1>登录成功</h1>
+[2018-11-30 16:23:34] INFO [log_case_info: case_log.py, 14] 实际结果：<h1>登录成功</h1>
+[2018-11-30 16:23:34] INFO [log_case_info: case_log.py, 10] 测试用例：test_user_login_password_wrong
+[2018-11-30 16:23:34] INFO [log_case_info: case_log.py, 11] url：http://115.28.108.130:5000/api/user/login/
+[2018-11-30 16:23:34] INFO [log_case_info: case_log.py, 12] 请求参数：{"name": "张三","password":"1234567"}
+[2018-11-30 16:23:34] INFO [log_case_info: case_log.py, 13] 期望结果：<h1>失败，用户名或密码错误</h1>
+[2018-11-30 16:23:34] INFO [log_case_info: case_log.py, 14] 实际结果：<h1>失败，用户名或密码错误</h1>
+[2018-11-30 16:23:34] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 16:23:34] "POST / HTTP/1.1" 302 -
+[2018-11-30 16:23:34] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 16:23:34] "GET /report HTTP/1.1" 200 -
+[2018-11-30 16:23:37] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 16:23:37] "GET / HTTP/1.1" 200 -
+[2018-11-30 16:23:39] INFO [log_case_info: case_log.py, 10] 测试用例：test_user_login_normal
+[2018-11-30 16:23:39] INFO [log_case_info: case_log.py, 11] url：http://115.28.108.130:5000/api/user/login/
+[2018-11-30 16:23:39] INFO [log_case_info: case_log.py, 12] 请求参数：{"name": "张三","password":"123456"}
+[2018-11-30 16:23:39] INFO [log_case_info: case_log.py, 13] 期望结果：<h1>登录成功</h1>
+[2018-11-30 16:23:39] INFO [log_case_info: case_log.py, 14] 实际结果：<h1>登录成功</h1>
+[2018-11-30 16:23:39] INFO [log_case_info: case_log.py, 10] 测试用例：test_user_login_password_wrong
+[2018-11-30 16:23:39] INFO [log_case_info: case_log.py, 11] url：http://115.28.108.130:5000/api/user/login/
+[2018-11-30 16:23:39] INFO [log_case_info: case_log.py, 12] 请求参数：{"name": "张三","password":"1234567"}
+[2018-11-30 16:23:39] INFO [log_case_info: case_log.py, 13] 期望结果：<h1>失败，用户名或密码错误</h1>
+[2018-11-30 16:23:39] INFO [log_case_info: case_log.py, 14] 实际结果：<h1>失败，用户名或密码错误</h1>
+[2018-11-30 16:23:40] INFO [log_case_info: case_log.py, 10] 测试用例：test_user_reg_exist
+[2018-11-30 16:23:40] INFO [log_case_info: case_log.py, 11] url：http://115.28.108.130:5000/api/user/reg/
+[2018-11-30 16:23:40] INFO [log_case_info: case_log.py, 12] 请求参数：{"name": "张三","password":"123456"}
+[2018-11-30 16:23:40] INFO [log_case_info: case_log.py, 13] 期望结果：{"code": "100001", "data": {"name": "\u5f20\u4e09", "password": "e10adc3949ba59abbe56e057f20f883e"}, "msg": "\u5931\u8d25\uff0c\u7528\u6237\u5df2\u5b58\u5728"}
+[2018-11-30 16:23:40] INFO [log_case_info: case_log.py, 14] 实际结果：{"code": "100001", "data": {"name": "张三", "password": "e10adc3949ba59abbe56e057f20f883e"}, "msg": "失败，用户已存在"}
+[2018-11-30 16:23:40] INFO [log_case_info: case_log.py, 10] 测试用例：test_user_reg_normal
+[2018-11-30 16:23:40] INFO [log_case_info: case_log.py, 11] url：http://115.28.108.130:5000/api/user/reg/
+[2018-11-30 16:23:40] INFO [log_case_info: case_log.py, 12] 请求参数：{"name": "范冰冰","password":"123456"}
+[2018-11-30 16:23:40] INFO [log_case_info: case_log.py, 13] 期望结果：{"code": "100000", "data": {"name": "\u8303\u51b0\u51b0", "password": "e10adc3949ba59abbe56e057f20f883e"}, "msg": "\u6210\u529f"}
+[2018-11-30 16:23:40] INFO [log_case_info: case_log.py, 14] 实际结果：{"code": "100000", "data": {"name": "范冰冰", "password": "e10adc3949ba59abbe56e057f20f883e"}, "msg": "成功"}
+[2018-11-30 16:23:40] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 16:23:40] "POST / HTTP/1.1" 302 -
+[2018-11-30 16:23:40] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 16:23:40] "GET /report HTTP/1.1" 200 -
+[2018-11-30 16:23:47] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 16:23:47] "GET / HTTP/1.1" 200 -
+[2018-11-30 16:23:49] INFO [log_case_info: case_log.py, 10] 测试用例：test_user_reg_normal
+[2018-11-30 16:23:49] INFO [log_case_info: case_log.py, 11] url：http://115.28.108.130:5000/api/user/reg/
+[2018-11-30 16:23:49] INFO [log_case_info: case_log.py, 12] 请求参数：{"name": "范冰冰","password":"123456"}
+[2018-11-30 16:23:49] INFO [log_case_info: case_log.py, 13] 期望结果：{"code": "100000", "data": {"name": "\u8303\u51b0\u51b0", "password": "e10adc3949ba59abbe56e057f20f883e"}, "msg": "\u6210\u529f"}
+[2018-11-30 16:23:49] INFO [log_case_info: case_log.py, 14] 实际结果：{"code": "100000", "data": {"name": "范冰冰", "password": "e10adc3949ba59abbe56e057f20f883e"}, "msg": "成功"}
+[2018-11-30 16:23:49] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 16:23:49] "POST / HTTP/1.1" 302 -
+[2018-11-30 16:23:49] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 16:23:49] "GET /report HTTP/1.1" 200 -
+[2018-11-30 16:23:52] INFO [_log: _internal.py, 88] 127.0.0.1 - - [30/Nov/2018 16:23:52] "GET / HTTP/1.1" 200 -
+[2018-11-30 16:38:35] INFO [_log: _internal.py, 88]  * Detected change in 'E:\\Projects\\api_test_framework_finish2\\dashboard\\app.py', reloading

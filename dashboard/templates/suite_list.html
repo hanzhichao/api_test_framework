@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h1>Test Suite列表</h1>
+<a href="/suite_add">添加Test Suite</a>
+<br>
+<form action="#" method="post">
+  {% for suite in suite_list %}
+  <input type="radio" name="suite" value="{{suite}}">{{ suite }}
+  <br>
+  {% endfor %}
+  <input type="submit" value="执行">
+</form>
+
+</body>
+</html>

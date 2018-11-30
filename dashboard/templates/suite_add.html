@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>新增Test Suite</h1>
+<form action="#" method="post">
+    标题：<input type="text" name="suite_name">
+    <h4>选择用例</h4>
+    {% for test in tests%}
+        <div><input type="checkbox" id="cases" name="cases" value="{{test}}">{{test}}</div>
+    {% endfor %}
+    <div><input type="submit" value="保存"></div>
+</form>
+</body>
+</html>

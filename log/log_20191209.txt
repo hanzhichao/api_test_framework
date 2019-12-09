@@ -1,0 +1,36 @@
+[2019-12-09 16:14:20] INFO [run: run.py, 65] ========================= 测试开始 =========================
+[2019-12-09 16:14:20] INFO [log_case_info: case_log.py, 10] 测试用例：test_user_login_normal
+[2019-12-09 16:14:20] INFO [log_case_info: case_log.py, 11] url：http://115.28.108.130:5000/api/user/login/
+[2019-12-09 16:14:20] INFO [log_case_info: case_log.py, 12] 请求参数：{"name": "张三","password":"123456"}
+[2019-12-09 16:14:20] INFO [log_case_info: case_log.py, 13] 期望结果：<h1>登录成功</h1>
+[2019-12-09 16:14:20] INFO [log_case_info: case_log.py, 14] 实际结果：<h1>失败，用户名或密码错误</h1>
+[2019-12-09 16:14:20] INFO [log_case_info: case_log.py, 10] 测试用例：test_user_login_password_wrong
+[2019-12-09 16:14:20] INFO [log_case_info: case_log.py, 11] url：http://115.28.108.130:5000/api/user/login/
+[2019-12-09 16:14:20] INFO [log_case_info: case_log.py, 12] 请求参数：{"name": "张三","password":"1234567"}
+[2019-12-09 16:14:20] INFO [log_case_info: case_log.py, 13] 期望结果：<h1>失败，用户名或密码错误</h1>
+[2019-12-09 16:14:20] INFO [log_case_info: case_log.py, 14] 实际结果：<h1>失败，用户名或密码错误</h1>
+[2019-12-09 16:14:20] INFO [run: run.py, 77] ========================= 测试结束 =========================
+[2019-12-09 16:17:56] INFO [run: run.py, 66] ========================= 测试开始 =========================
+[2019-12-09 16:17:56] INFO [log_case_info: case_log.py, 10] 测试用例：test_user_login_normal
+[2019-12-09 16:17:56] INFO [log_case_info: case_log.py, 11] url：http://115.28.108.130:5000/api/user/login/
+[2019-12-09 16:17:56] INFO [log_case_info: case_log.py, 12] 请求参数：{"name": "张三","password":"123456"}
+[2019-12-09 16:17:56] INFO [log_case_info: case_log.py, 13] 期望结果：<h1>登录成功</h1>
+[2019-12-09 16:17:56] INFO [log_case_info: case_log.py, 14] 实际结果：<h1>失败，用户名或密码错误</h1>
+[2019-12-09 16:17:56] INFO [log_case_info: case_log.py, 10] 测试用例：test_user_login_password_wrong
+[2019-12-09 16:17:56] INFO [log_case_info: case_log.py, 11] url：http://115.28.108.130:5000/api/user/login/
+[2019-12-09 16:17:56] INFO [log_case_info: case_log.py, 12] 请求参数：{"name": "张三","password":"1234567"}
+[2019-12-09 16:17:56] INFO [log_case_info: case_log.py, 13] 期望结果：<h1>失败，用户名或密码错误</h1>
+[2019-12-09 16:17:56] INFO [log_case_info: case_log.py, 14] 实际结果：<h1>失败，用户名或密码错误</h1>
+[2019-12-09 16:17:56] INFO [run: run.py, 78] ========================= 测试结束 =========================
+[2019-12-09 16:18:31] INFO [run: run.py, 66] ========================= 测试开始 =========================
+[2019-12-09 16:18:31] INFO [log_case_info: case_log.py, 10] 测试用例：test_user_login_normal
+[2019-12-09 16:18:31] INFO [log_case_info: case_log.py, 11] url：http://115.28.108.130:5000/api/user/login/
+[2019-12-09 16:18:31] INFO [log_case_info: case_log.py, 12] 请求参数：{"name": "张三","password":"123456"}
+[2019-12-09 16:18:31] INFO [log_case_info: case_log.py, 13] 期望结果：<h1>登录成功</h1>
+[2019-12-09 16:18:31] INFO [log_case_info: case_log.py, 14] 实际结果：<h1>失败，用户名或密码错误</h1>
+[2019-12-09 16:18:31] INFO [log_case_info: case_log.py, 10] 测试用例：test_user_login_password_wrong
+[2019-12-09 16:18:31] INFO [log_case_info: case_log.py, 11] url：http://115.28.108.130:5000/api/user/login/
+[2019-12-09 16:18:31] INFO [log_case_info: case_log.py, 12] 请求参数：{"name": "张三","password":"1234567"}
+[2019-12-09 16:18:31] INFO [log_case_info: case_log.py, 13] 期望结果：<h1>失败，用户名或密码错误</h1>
+[2019-12-09 16:18:31] INFO [log_case_info: case_log.py, 14] 实际结果：<h1>失败，用户名或密码错误</h1>
+[2019-12-09 16:18:31] INFO [run: run.py, 78] ========================= 测试结束 =========================

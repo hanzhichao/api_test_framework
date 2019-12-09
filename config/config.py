@@ -19,7 +19,9 @@ data_file = os.path.join(prj_path, 'data', 'test_user_data.xlsx')
 
 testlist_file = os.path.join(prj_path, 'test', 'testlist.txt')
 
-last_fails_file = os.path.join(prj_path, 'last_failures.pickle')
+cache_dir = os.path.join(prj_path, '.cache')
+
+last_fails_file = os.path.join(cache_dir, 'last_failures.pickle')
 
 # log配置
 logging.basicConfig(level=logging.INFO,  # log level

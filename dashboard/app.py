@@ -16,6 +16,7 @@ suite_dir = os.path.join(app_dir, 'suites')
 
 report_file = os.path.join(app_dir, 'templates','report.html')
 
+
 def discover():
     return unittest.defaultTestLoader.discover(case_dir)
 
@@ -51,7 +52,6 @@ def suite_list():
     return render_template('suite_list.html', suite_list=suite_list)
 
 
-
 @app.route("/suite_add", methods=["GET", "POST"])
 def suite_add():
     tests = []
@@ -73,10 +73,10 @@ def suite_add():
     return render_template('suite_add.html', tests=tests)
 
 
-
 @app.route("/report", methods=['GET', 'POST'])
 def report():
     return render_template('report.html')
+
 
 if __name__ == '__main__':
     app.run(port="5005", debug=True)

@@ -67,7 +67,7 @@ def suite_add():
         with open(os.path.join(suite_dir, suite_name+".testsuite"), 'wb') as f:
             pickle.dump(suite, f)
 
-        return redirect("/list")
+        return redirect("/")
         # unittest.TextTestRunner(verbosity=2).run(suite)
 
     return render_template('suite_add.html', tests=tests)
@@ -79,4 +79,4 @@ def report():
 
 
 if __name__ == '__main__':
-    app.run(port="5005", debug=True)
+    app.run(port=5005, debug=True)

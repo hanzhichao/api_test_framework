@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Title</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-<h1>Test Suite列表</h1>
-<a href="/suite_add">添加Test Suite</a>
-<br>
-<form action="#" method="post">
-  {% for suite in suite_list %}
-  <input type="radio" name="suite" value="{{suite}}">{{ suite }}
-  <br>
-  {% endfor %}
-  <input type="submit" value="执行">
-</form>
+<div id="main" class="container mt-5">
+
+    <h2>Test Suite列表</h2>
+    <div><a class="btn btn-outline-info btn-sm" href="/suite_add">添加Test Suite</a></div>
+    <div class="card shadow-sm mt-2">
+        <div class="card-body">
+            <form action="#" method="post" class="mt-2">
+                {% for suite in suite_list %}
+                    <input type="radio" name="suite"  class="mt-1" value="{{suite}}"/> {{ suite }}<br>
+                {% endfor %}
+                <hr/>
+                <input type="submit" class="btn btn-primary btn-sm" value="执行">
+            </form>
+        </div>
+    </div>
+
+</div>
 
 </body>
 </html>

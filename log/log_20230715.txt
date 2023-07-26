@@ -1,0 +1,15 @@
+[2023-07-15 23:25:15] INFO [_log: _internal.py, 187] 127.0.0.1 - - [15/Jul/2023 23:25:15] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+[2023-07-15 23:25:15] INFO [_log: _internal.py, 187] 127.0.0.1 - - [15/Jul/2023 23:25:15] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2023-07-15 23:25:15] INFO [_log: _internal.py, 187] 127.0.0.1 - - [15/Jul/2023 23:25:15] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2023-07-15 23:25:15] INFO [_log: _internal.py, 187] 127.0.0.1 - - [15/Jul/2023 23:25:15] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2023-07-15 23:26:00] INFO [_log: _internal.py, 187] 127.0.0.1 - - [15/Jul/2023 23:26:00] "GET /suite_add HTTP/1.1" 200 -
+[2023-07-15 23:27:09] INFO [_log: _internal.py, 187] 127.0.0.1 - - [15/Jul/2023 23:27:09] "GET /suite_add HTTP/1.1" 200 -
+[2023-07-15 23:27:28] INFO [_log: _internal.py, 187] 127.0.0.1 - - [15/Jul/2023 23:27:28] "GET /suite_add HTTP/1.1" 200 -
+[2023-07-15 23:28:04] INFO [_log: _internal.py, 187] 127.0.0.1 - - [15/Jul/2023 23:28:04] "GET /suite_add HTTP/1.1" 200 -
+[2023-07-15 23:28:18] INFO [_log: _internal.py, 187] 127.0.0.1 - - [15/Jul/2023 23:28:18] "GET /suite_add HTTP/1.1" 200 -
+[2023-07-15 23:28:31] INFO [_log: _internal.py, 187] 127.0.0.1 - - [15/Jul/2023 23:28:31] "GET /suite_add HTTP/1.1" 200 -
+[2023-07-15 23:28:43] INFO [_log: _internal.py, 187] 127.0.0.1 - - [15/Jul/2023 23:28:43] "GET /suite_add HTTP/1.1" 200 -
+[2023-07-15 23:29:28] INFO [_log: _internal.py, 187] 127.0.0.1 - - [15/Jul/2023 23:29:28] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+[2023-07-15 23:29:28] INFO [_log: _internal.py, 187] 127.0.0.1 - - [15/Jul/2023 23:29:28] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2023-07-15 23:29:28] INFO [_log: _internal.py, 187] 127.0.0.1 - - [15/Jul/2023 23:29:28] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2023-07-15 23:29:28] INFO [_log: _internal.py, 187] 127.0.0.1 - - [15/Jul/2023 23:29:28] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
